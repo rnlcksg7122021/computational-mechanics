@@ -129,37 +129,10 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Computational Mechanics 02 - Analyze Data
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="01_Cheers_Stats_Beers.html">
-     01 - Cheers!  Stats with Beers
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="02_Seeing_Stats.html">
-     02 - Seeing stats in a new light
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="03_Linear_Regression_with_Real_Data.html">
-     03 - Linear regression with real data
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="04_Stats_and_Montecarlo.html">
-     04 - Statistics and Monte-Carlo Models
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -248,15 +221,22 @@
             </div>
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#learning-some-statistics-and-data-processing-skills-in-python">
-   Learning some statistics and data processing skills in Python
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Computational Mechanics 02 - Analyze Data
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learning-some-statistics-and-data-processing-skills-in-python">
+     Learning some statistics and data processing skills in Python
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#computational-mechanics-project-02-create-specifications-for-a-spitballing-robot">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-02-nyse-random-walk-predictor">
    <span class="xref myst">
-    Computational Mechanics Project #02 - Create specifications for a spitballing robot
+    Project #02 - NYSE random walk predictor
    </span>
   </a>
  </li>
@@ -323,35 +303,37 @@ mechanics using Python, listed below each module are the learning objectives.</p
 <li><p><span class="xref myst">04_Stats_and_Montecarlo</span></p></li>
 </ol>
 <ul class="simple">
-<li><p>How to generate “random” numbers in Python+</p></li>
+<li><p>How to generate “random” numbers in Python<span class="math notranslate nohighlight">\(^+\)</span></p></li>
 <li><p>The definition of a Monte Carlo model</p></li>
 <li><p>How to calculate <span class="math notranslate nohighlight">\(\pi\)</span> with Monte Carlo</p></li>
-<li><p>How to take the integral of a function with Monte Carlo</p></li>
+<li><p>How to model Brownian motion with Monte Carlo</p></li>
 <li><p>How to propagate uncertainty in a model with Monte Carlo</p></li>
-<li><p><strong>Bonus</strong>: use Sympy to do calculus and algebra for us! _no need for</p></li>
-<li><p>Wolfram, sorry Stephen_</p></li>
 <li><p>How to generate a normal distribution using uniformly random numbers</p></li>
 </ul>
-<p>+The computer only generates pseudo-random numbers. For further
-information <strong>and</strong> truly random numbers  check
+<p><span class="math notranslate nohighlight">\(^+\)</span> Remember, the computer only generates pseudo-random numbers. For
+further information <strong>and</strong> truly random numbers  check
 <a class="reference external" href="https://www.random.org/randomness/">www.random.org</a></p>
 </div>
-<div class="section" id="computational-mechanics-project-02-create-specifications-for-a-spitballing-robot">
-<h2><span class="xref myst">Computational Mechanics Project #02 - Create specifications for a spitballing robot</span><a class="headerlink" href="#computational-mechanics-project-02-create-specifications-for-a-spitballing-robot" title="Permalink to this headline">¶</a></h2>
-<p>On the first day of class, we threw <span class="math notranslate nohighlight">\(2&quot;\times~2&quot;\)</span> dampened paper (spitballs) at
-a target on the whiteboard. Now, we are going to analyze the accuracy of the
-class with some cool Python tools and design a robot that has the same accuracy
-and precision as the class.</p>
-<p>The goal of this project is to determine the precision of necessary components
-for a robot that can reproduce the class throwing distibution. We have generated
-pseudo random numbers using <code class="docutils literal notranslate"><span class="pre">numpy.random</span></code>, but the class target practice is an
-example of truly random distributions. If we repeated the exercise, there is a
-vanishingly small probability that we would hit the same points on the target,
-and there are no deterministic models that could take into account all of the
-factors that affected each hit on the board.</p>
-<img src="./images/robot_design.png" style="height: 250px;"/>
-<div class="toctree-wrapper compound">
 </div>
+<div class="section" id="project-02-nyse-random-walk-predictor">
+<h1><a class="reference internal" href="../projects/02_Analyze-data_project.html"><span class="doc std std-doc">Project #02 - NYSE random walk predictor</span></a><a class="headerlink" href="#project-02-nyse-random-walk-predictor" title="Permalink to this headline">¶</a></h1>
+<p>In the <a class="reference internal" href="04_Stats_and_Montecarlo.html"><span class="doc std std-doc">Stats and Monte Carlo</span></a> module, you created a Brownian motion model to predict the motion of particles in a fluid. The Monte Carlo model took steps in the x- and y-directions with random magnitudes.</p>
+<p>This <a class="reference external" href="https://en.wikipedia.org/wiki/Random_walk_hypothesis">random walk</a> can be used to predict stock prices. Let’s take a look at some data from the New York Stock Exchange <a class="reference external" href="https://www.kaggle.com/dgawlik/nyse">NYSE</a> from 2010 through 2017.</p>
+<blockquote>
+<div><p><strong>Important Note</strong>:
+I am not a financial advisor and these models are <em>purely</em> for academic exercises. If you decide to use anything in these notebooks to make financial decisions, it is <em>at your own risk</em>. <em>I am not an economist/financial advisor/etc., I am just a Professor who likes to learn and exeriment.</em></p>
+</div></blockquote>
+<p>Here, I will show an example workflow to analyze and predict the Google
+stock price <a class="reference external" href="https://en.wikipedia.org/wiki/Alphabet_Inc.">[GOOGL]</a> from
+2010 - 2014. Then, you can choose your own stock price to evaluate and
+create a predictive model.</p>
+<ol class="simple">
+<li><p>Explore data and select data of interest</p></li>
+<li><p>Find statistical description of data: mean and standard deviation</p></li>
+<li><p>Create random variables</p></li>
+<li><p>Generate random walk for <a class="reference external" href="https://en.wikipedia.org/wiki/Alphabet_Inc.">[GOOGL]</a> stock opening price</p></li>
+</ol>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 

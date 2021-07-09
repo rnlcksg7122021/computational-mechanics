@@ -53,6 +53,7 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Project #02 - NYSE random walk predictor" href="../projects/02_Analyze-data_project.html" />
     <link rel="prev" title="03 - Linear regression with real data" href="03_Linear_Regression_with_Real_Data.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -128,37 +129,10 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="README.html">
    Computational Mechanics 02 - Analyze Data
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2">
-    <a class="reference internal" href="01_Cheers_Stats_Beers.html">
-     01 - Cheers!  Stats with Beers
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="02_Seeing_Stats.html">
-     02 - Seeing stats in a new light
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="03_Linear_Regression_with_Real_Data.html">
-     03 - Linear regression with real data
-    </a>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     04 - Statistics and Monte-Carlo Models
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -392,10 +366,10 @@ library</a> as such</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.44129621, 0.56066093, 0.47007045, 0.62308428, 0.41886921,
-       0.41893188, 0.4041608 , 0.37323942, 0.08206419, 0.73659269,
-       0.68548384, 0.12493272, 0.43692192, 0.3900099 , 0.89082091,
-       0.66994011, 0.78262039, 0.72033653, 0.18941293, 0.30669265])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.11641823, 0.70187163, 0.71626428, 0.62970181, 0.20497339,
+       0.80034715, 0.27794463, 0.82611352, 0.58841806, 0.07540012,
+       0.87686508, 0.68756102, 0.35642803, 0.38944142, 0.38009048,
+       0.63524473, 0.93067658, 0.36944269, 0.30067866, 0.7222723 ])
 </pre></div>
 </div>
 </div>
@@ -428,9 +402,9 @@ The call to <code class="docutils literal notranslate"><span class="pre">rng.ran
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(array([3., 4., 6., 4., 3.]),
- array([0.08206419, 0.24381554, 0.40556688, 0.56731822, 0.72906957,
-        0.89082091]),
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(array([3., 6., 1., 6., 4.]),
+ array([0.07540012, 0.24645542, 0.41751071, 0.588566  , 0.75962129,
+        0.93067658]),
  &lt;BarContainer object of 5 artists&gt;)
 </pre></div>
 </div>
@@ -491,8 +465,8 @@ The call to <code class="docutils literal notranslate"><span class="pre">rng.ran
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.45467254, 0.37361903, 0.21387083, 0.92664438, 0.01138389,
-       0.47710179, 0.79663198, 0.1214168 , 0.78255997, 0.43652525])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.7409851 , 0.83340029, 0.46371248, 0.03282098, 0.57260152,
+       0.52953308, 0.8037876 , 0.06928042, 0.22021886, 0.34463738])
 </pre></div>
 </div>
 </div>
@@ -537,8 +511,8 @@ The call to <code class="docutils literal notranslate"><span class="pre">rng.ran
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.154800
-standard deviation is 0.049994
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.141200
+standard deviation is 0.047634
 actual pi is 3.141593
 </pre></div>
 </div>
@@ -566,8 +540,8 @@ we did in <span class="xref myst">03-Numerical_error</span></p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.142400
-standard deviation is 0.044022
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.143320
+standard deviation is 0.052383
 actual pi is 3.141593
 </pre></div>
 </div>
@@ -590,8 +564,8 @@ actual pi is 3.141593
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.138080
-standard deviation is 0.011950
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.141000
+standard deviation is 0.016736
 actual pi is 3.141593
 </pre></div>
 </div>
@@ -742,7 +716,7 @@ steps each.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fb6061910d0&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f057b17ea30&gt;]
 </pre></div>
 </div>
 <img alt="../_images/04_Stats_and_Montecarlo_29_1.png" src="../_images/04_Stats_and_Montecarlo_29_1.png" />
@@ -988,6 +962,7 @@ reach the critical buckling load?</p>
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="03_Linear_Regression_with_Real_Data.html" title="previous page">03 - Linear regression with real data</a>
+    <a class='right-next' id="next-link" href="../projects/02_Analyze-data_project.html" title="next page">Project #02 - NYSE random walk predictor</a>
 
         </div>
         
