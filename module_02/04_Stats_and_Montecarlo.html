@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -162,6 +162,43 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/02_Analyze-data_project.html">
      Project #02 - NYSE random walk predictor
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../module_03/README.html">
+   Computational Mechanics 03- Initial Value Problems
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_03/01_Catch_Motion.html">
+     Catch things in motion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_03/02_Step_Future.html">
+     Step to the future
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_03/03_Get_Oscillations.html">
+     Get with the oscillations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_03/04_Getting_to_the_root.html">
+     Roots of Nonlinear functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/03_IVP-project.html">
+     Initial Value Problems - Project
     </a>
    </li>
   </ul>
@@ -398,10 +435,10 @@ library</a> as such</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.49188568, 0.04247736, 0.90806809, 0.77055392, 0.36055678,
-       0.80198474, 0.32170313, 0.12093926, 0.60353763, 0.47958103,
-       0.83090789, 0.83608809, 0.36122829, 0.87548374, 0.5359996 ,
-       0.33206022, 0.41584374, 0.88931621, 0.45342678, 0.65530542])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.13040125, 0.44913973, 0.68868072, 0.82140773, 0.89877728,
+       0.06962897, 0.33239929, 0.92122865, 0.9628392 , 0.39192184,
+       0.48123257, 0.1500112 , 0.44302109, 0.00479488, 0.64187449,
+       0.79499849, 0.87667356, 0.16558153, 0.97896336, 0.7481756 ])
 </pre></div>
 </div>
 </div>
@@ -434,9 +471,9 @@ The call to <code class="docutils literal notranslate"><span class="pre">rng.ran
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(array([2., 4., 5., 2., 7.]),
- array([0.04247736, 0.21559551, 0.38871365, 0.5618318 , 0.73494994,
-        0.90806809]),
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(array([5., 2., 3., 3., 7.]),
+ array([0.00479488, 0.19962858, 0.39446227, 0.58929597, 0.78412967,
+        0.97896336]),
  &lt;BarContainer object of 5 artists&gt;)
 </pre></div>
 </div>
@@ -497,8 +534,8 @@ The call to <code class="docutils literal notranslate"><span class="pre">rng.ran
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.62091134, 0.93722253, 0.27975792, 0.36615243, 0.80898771,
-       0.71890793, 0.07488136, 0.09026944, 0.97400405, 0.20756591])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.23679985, 0.4240808 , 0.26765687, 0.0025063 , 0.70015306,
+       0.14191033, 0.58019545, 0.01662033, 0.8366521 , 0.42350225])
 </pre></div>
 </div>
 </div>
@@ -543,8 +580,8 @@ The call to <code class="docutils literal notranslate"><span class="pre">rng.ran
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.133200
-standard deviation is 0.058544
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.124400
+standard deviation is 0.027739
 actual pi is 3.141593
 </pre></div>
 </div>
@@ -572,8 +609,8 @@ we did in <span class="xref myst">03-Numerical_error</span></p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.139920
-standard deviation is 0.046603
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.142320
+standard deviation is 0.047619
 actual pi is 3.141593
 </pre></div>
 </div>
@@ -596,8 +633,8 @@ actual pi is 3.141593
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.135400
-standard deviation is 0.018889
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.144400
+standard deviation is 0.018292
 actual pi is 3.141593
 </pre></div>
 </div>
@@ -748,7 +785,7 @@ steps each.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fce720441c0&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7efc0ec26df0&gt;]
 </pre></div>
 </div>
 <img alt="../_images/04_Stats_and_Montecarlo_29_1.png" src="../_images/04_Stats_and_Montecarlo_29_1.png" />
