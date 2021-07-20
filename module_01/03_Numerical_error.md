@@ -639,7 +639,6 @@ print('years=',year)
 print('population =', pop)
 ```
 
-
 ```{code-cell} ipython3
 print('average population changes 1900-1950, 1950-2000, 2000-2020')
 print((pop[1:] - pop[0:-1])/(year[1:] - year[0:-1]))
@@ -648,7 +647,6 @@ print(np.mean((pop[1:] - pop[0:-1])/(year[1:] - year[0:-1])))
 ```
 
 __d.__ As the number of time steps increases, the Euler approximation approaches the analytical solution, not the measured data. The best-case scenario is that the Euler solution is the same as the analytical solution.
-
 
 +++
 
