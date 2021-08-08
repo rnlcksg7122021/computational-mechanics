@@ -1,4 +1,7 @@
 # Computational Mechanics
+> __Note__: This Open Educational Resource was built with
+[Jupyter-Book](https://jupyterbook.org) __Check it out -->__ [![Jupyter Book
+Badge](images/badge.svg)](https://cooperrc.github.io/computational-mechanics/README.html)
 
 Welcome to Computational Mechanics! 
 
@@ -25,35 +28,28 @@ computational methods to solve those problems.
 ### [CompMech01-Getting Started](module_01/README)
 
 - Getting comfortable with Python
-
 - Quantifying error in computational methods
 
 ### [CompMech02-Analyze-data](module_02/README)
 
 - Describing and plotting data
-
 - Some statistics
-
 - Monte Carlo modelling
 
 ### [CompMech03-Initial Value Problems](module_03/README)
 
 - Creating functions that are physical models
-
 - Solving ordinary differential equations
-
 - Solving nonlinear equations
 
 ### [CompMech04-Linear Algebra](module_04/README)
 
 - Define sets of equations as matrix algebra
-
 - Solve for multiple equations for multiple unknown variables
 
 ### [CompMech05-Boundary Value Problems](module_05/README)
 
 - Continue creating functions that are physical models
-
 - Solve 1D and 2D partial differential equations with finite difference
   approximations
 

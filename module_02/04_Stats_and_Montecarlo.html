@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -199,6 +201,92 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/03_IVP-project.html">
      Initial Value Problems - Project
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../module_04/README.html">
+   Computational Mechanics 4 - Linear Algebra
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_04/01_Linear-Algebra.html">
+     Linear Algebra Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_04/02_Gauss_elimination.html">
+     Gauss Elimination
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_04/03_Linear-regression-algebra.html">
+     Linear Regression Algebra
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/04_Linear_Algebra-project.html">
+     CompMech04-Linear Algebra Project
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../module_05/README.html">
+   Computational Mechanics 5 - Boundary Value Problems
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_05/01_Revisiting_derivatives.html">
+     Revisiting Derivatives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_05/02_Keep_it_steady.html">
+     Keep it Steady
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_05/03_Good_Vibrations.html">
+     Good Vibrations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/05-BVPs_project.html">
+     Computational Mechanics Boundary Values - Project 05
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/README.html">
+   Quick How-to documents
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/polyfit.html">
+     Creating a quadratic fit on random data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/extra-FEA_material.html">
+     Extra Material: Direct stiffness method for Finite Element analysis (FEA)
     </a>
    </li>
   </ul>
@@ -435,10 +523,10 @@ library</a> as such</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.13040125, 0.44913973, 0.68868072, 0.82140773, 0.89877728,
-       0.06962897, 0.33239929, 0.92122865, 0.9628392 , 0.39192184,
-       0.48123257, 0.1500112 , 0.44302109, 0.00479488, 0.64187449,
-       0.79499849, 0.87667356, 0.16558153, 0.97896336, 0.7481756 ])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.31171711, 0.33161772, 0.77649434, 0.31028223, 0.55116012,
+       0.0396368 , 0.68149084, 0.69978678, 0.49551112, 0.44158635,
+       0.81012161, 0.37260972, 0.95012177, 0.61008655, 0.13782126,
+       0.12392742, 0.92899133, 0.36520855, 0.82504913, 0.67638265])
 </pre></div>
 </div>
 </div>
@@ -471,9 +559,9 @@ The call to <code class="docutils literal notranslate"><span class="pre">rng.ran
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(array([5., 2., 3., 3., 7.]),
- array([0.00479488, 0.19962858, 0.39446227, 0.58929597, 0.78412967,
-        0.97896336]),
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(array([3., 5., 3., 4., 5.]),
+ array([0.0396368 , 0.22173379, 0.40383078, 0.58592778, 0.76802477,
+        0.95012177]),
  &lt;BarContainer object of 5 artists&gt;)
 </pre></div>
 </div>
@@ -534,8 +622,8 @@ The call to <code class="docutils literal notranslate"><span class="pre">rng.ran
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.23679985, 0.4240808 , 0.26765687, 0.0025063 , 0.70015306,
-       0.14191033, 0.58019545, 0.01662033, 0.8366521 , 0.42350225])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.18858804, 0.708547  , 0.5434135 , 0.08140355, 0.91097367,
+       0.7597068 , 0.58615048, 0.42586752, 0.28338571, 0.83418141])
 </pre></div>
 </div>
 </div>
@@ -580,8 +668,8 @@ The call to <code class="docutils literal notranslate"><span class="pre">rng.ran
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.124400
-standard deviation is 0.027739
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.144000
+standard deviation is 0.042858
 actual pi is 3.141593
 </pre></div>
 </div>
@@ -609,8 +697,8 @@ we did in <span class="xref myst">03-Numerical_error</span></p></li>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.142320
-standard deviation is 0.047619
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.135960
+standard deviation is 0.051693
 actual pi is 3.141593
 </pre></div>
 </div>
@@ -633,8 +721,8 @@ actual pi is 3.141593
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.144400
-standard deviation is 0.018292
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mean value for pi = 3.134600
+standard deviation is 0.014598
 actual pi is 3.141593
 </pre></div>
 </div>
@@ -785,7 +873,7 @@ steps each.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7efc0ec26df0&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fe881971100&gt;]
 </pre></div>
 </div>
 <img alt="../_images/04_Stats_and_Montecarlo_29_1.png" src="../_images/04_Stats_and_Montecarlo_29_1.png" />

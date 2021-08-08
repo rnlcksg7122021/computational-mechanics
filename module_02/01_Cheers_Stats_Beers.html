@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -199,6 +201,92 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/03_IVP-project.html">
      Initial Value Problems - Project
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../module_04/README.html">
+   Computational Mechanics 4 - Linear Algebra
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_04/01_Linear-Algebra.html">
+     Linear Algebra Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_04/02_Gauss_elimination.html">
+     Gauss Elimination
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_04/03_Linear-regression-algebra.html">
+     Linear Regression Algebra
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/04_Linear_Algebra-project.html">
+     CompMech04-Linear Algebra Project
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../module_05/README.html">
+   Computational Mechanics 5 - Boundary Value Problems
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_05/01_Revisiting_derivatives.html">
+     Revisiting Derivatives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_05/02_Keep_it_steady.html">
+     Keep it Steady
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_05/03_Good_Vibrations.html">
+     Good Vibrations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/05-BVPs_project.html">
+     Computational Mechanics Boundary Values - Project 05
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/README.html">
+   Quick How-to documents
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/polyfit.html">
+     Creating a quadratic fit on random data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/extra-FEA_material.html">
+     Extra Material: Direct stiffness method for Finite Element analysis (FEA)
     </a>
    </li>
   </ul>
@@ -481,17 +569,6 @@ columns that you need—which you’ll convert to <code class="docutils literal 
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_2907</span><span class="o">/</span><span class="mf">2162656668.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="section" id="step-1-read-the-data-file">
 <h2>Step 1: Read the data file<a class="headerlink" href="#step-1-read-the-data-file" title="Permalink to this headline">¶</a></h2>
@@ -503,6 +580,20 @@ a URL on the Internet. You created a short URL for the data file in the public r
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>head <span class="s2">&quot;../data/beers.csv&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>,abv,ibu,id,name,style,brewery_id,ounces
+0,0.05,,1436,Pub Beer,American Pale Lager,408,12.0
+1,0.066,,2265,Devil&#39;s Cup,American Pale Ale (APA),177,12.0
+2,0.071,,2264,Rise of the Phoenix,American IPA,177,12.0
+3,0.09,,2263,Sinister,American Double / Imperial IPA,177,12.0
+4,0.075,,2262,Sex and Candy,American IPA,177,12.0
+5,0.077,,2261,Black Exodus,Oatmeal Stout,177,12.0
+6,0.045,,2260,Lake Street Express,American Pale Ale (APA),177,12.0
+7,0.065,,2259,Foreman,American Porter,177,12.0
+8,0.055,,2258,Jade,American Pale Ale (APA),177,12.0
 </pre></div>
 </div>
 </div>
@@ -523,6 +614,11 @@ new variable—rememeber that you can use the function <code class="docutils lit
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pandas.core.frame.DataFrame
+</pre></div>
+</div>
+</div>
 </div>
 <p>This is a new data type for us: a <code class="docutils literal notranslate"><span class="pre">pandas</span> <span class="pre">DataFrame</span></code>. From the <code class="docutils literal notranslate"><span class="pre">pandas</span></code> documentation: “A <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>  is a 2-dimensional labeled data structure with columns of potentially different types” [4]. You can think of it as the contens of a spreadsheet, saved into one handy Python variable. If you print it out, you get a nicely laid-out table:</p>
 <div class="cell docutils container">
@@ -531,6 +627,161 @@ new variable—rememeber that you can use the function <code class="docutils lit
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>abv</th>
+      <th>ibu</th>
+      <th>id</th>
+      <th>name</th>
+      <th>style</th>
+      <th>brewery_id</th>
+      <th>ounces</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0.050</td>
+      <td>NaN</td>
+      <td>1436</td>
+      <td>Pub Beer</td>
+      <td>American Pale Lager</td>
+      <td>408</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>0.066</td>
+      <td>NaN</td>
+      <td>2265</td>
+      <td>Devil's Cup</td>
+      <td>American Pale Ale (APA)</td>
+      <td>177</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>0.071</td>
+      <td>NaN</td>
+      <td>2264</td>
+      <td>Rise of the Phoenix</td>
+      <td>American IPA</td>
+      <td>177</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>0.090</td>
+      <td>NaN</td>
+      <td>2263</td>
+      <td>Sinister</td>
+      <td>American Double / Imperial IPA</td>
+      <td>177</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>0.075</td>
+      <td>NaN</td>
+      <td>2262</td>
+      <td>Sex and Candy</td>
+      <td>American IPA</td>
+      <td>177</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2402</th>
+      <td>2405</td>
+      <td>0.067</td>
+      <td>45.0</td>
+      <td>928</td>
+      <td>Belgorado</td>
+      <td>Belgian IPA</td>
+      <td>424</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>2403</th>
+      <td>2406</td>
+      <td>0.052</td>
+      <td>NaN</td>
+      <td>807</td>
+      <td>Rail Yard Ale</td>
+      <td>American Amber / Red Ale</td>
+      <td>424</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>2404</th>
+      <td>2407</td>
+      <td>0.055</td>
+      <td>NaN</td>
+      <td>620</td>
+      <td>B3K Black Lager</td>
+      <td>Schwarzbier</td>
+      <td>424</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>2405</th>
+      <td>2408</td>
+      <td>0.055</td>
+      <td>40.0</td>
+      <td>145</td>
+      <td>Silverback Pale Ale</td>
+      <td>American Pale Ale (APA)</td>
+      <td>424</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>2406</th>
+      <td>2409</td>
+      <td>0.052</td>
+      <td>NaN</td>
+      <td>84</td>
+      <td>Rail Yard Ale (2009)</td>
+      <td>American Amber / Red Ale</td>
+      <td>424</td>
+      <td>12.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>2407 rows × 8 columns</p>
+</div></div></div>
 </div>
 <p>Inspect the table above. The first column is a numbering scheme for the beers. The other columns contain the following data:</p>
 <ul class="simple">
@@ -560,12 +811,32 @@ frames in <code class="docutils literal notranslate"><span class="pre">pandas</s
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pandas.core.series.Series
+</pre></div>
+</div>
+</div>
 </div>
 <p>Of course, you can index and slice a data series like you know how to do
 with strings, lists and arrays. Here, you display the first ten elements of the <code class="docutils literal notranslate"><span class="pre">abv</span></code> series:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">beers</span><span class="p">[</span><span class="s1">&#39;abv&#39;</span><span class="p">][:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    0.050
+1    0.066
+2    0.071
+3    0.090
+4    0.075
+5    0.077
+6    0.045
+7    0.065
+8    0.055
+9    0.086
+Name: abv, dtype: float64
 </pre></div>
 </div>
 </div>
@@ -585,6 +856,11 @@ with strings, lists and arrays. Here, you display the first ten elements of the 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2407
+</pre></div>
+</div>
+</div>
 </div>
 <p>Another advantage of <code class="docutils literal notranslate"><span class="pre">pandas</span></code> is that it has the ability to handle missing data. The  data-frame method <code class="docutils literal notranslate"><span class="pre">dropna()</span></code> returns a new data frame with only the good values of the original: all the null values are thrown out. This is super useful!</p>
 <div class="cell docutils container">
@@ -598,6 +874,11 @@ with strings, lists and arrays. Here, you display the first ten elements of the 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">abv_clean</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2348
 </pre></div>
 </div>
 </div>
@@ -620,10 +901,20 @@ the case of the <code class="docutils literal notranslate"><span class="pre">abv
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.05  0.066 0.071 ... 0.055 0.055 0.052]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">abv</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy.ndarray
 </pre></div>
 </div>
 </div>
@@ -639,6 +930,11 @@ an array, check how many values you lost.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2407
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -647,6 +943,11 @@ an array, check how many values you lost.</p>
 <span class="n">ibu</span> <span class="o">=</span> <span class="n">ibu_clean</span><span class="o">.</span><span class="n">values</span>
 
 <span class="nb">len</span><span class="p">(</span><span class="n">ibu</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1405
 </pre></div>
 </div>
 </div>
@@ -692,6 +993,12 @@ You can obtain them for your <code class="docutils literal notranslate"><span cl
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The minimum value for abv is:  0.001
+The maximum value for abv is:  0.128
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>ibu</strong></p>
 <div class="cell docutils container">
@@ -709,6 +1016,12 @@ You can obtain them for your <code class="docutils literal notranslate"><span cl
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The minimum value for ibu is:  4.0
+The maximum value for ibu is:  138.0
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="mean-value">
@@ -716,9 +1029,7 @@ You can obtain them for your <code class="docutils literal notranslate"><span cl
 <p>The <strong>mean</strong> value is one of the main measures to describe the central
 tendency of the data: an indication of where’s the “center” of the data.
 If you have a sample of <span class="math notranslate nohighlight">\(N\)</span> values, <span class="math notranslate nohighlight">\(x_i\)</span>, the mean, <span class="math notranslate nohighlight">\(\bar{x}\)</span>, is calculated by:</p>
-<p>\begin{equation*}
-\bar{x} = \frac{1}{N}\sum_{i} x_i
-\end{equation*}</p>
+<p><span class="math notranslate nohighlight">\(\bar{x} = \frac{1}{N}\sum_{i} x_i\)</span></p>
 <p>In words, that is the sum of the data values divided by the number of values, <span class="math notranslate nohighlight">\(N\)</span>.</p>
 <p>You’ve already learned how to write a function to compute the mean in
 <a class="reference external" href="http://go.gwu.edu/engcomp1lesson5">Module 1 Lesson 5</a>, but you also
@@ -741,6 +1052,11 @@ get the mean of the <code class="docutils literal notranslate"><span class="pre"
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The mean value for abv is 0.059773424190800666 and for ibu 42.71316725978647
+</pre></div>
+</div>
+</div>
 </div>
 <p>Ugh! That doesn’t look very good, does it? Here’s where Python’s string
 formatting gets fancy. You can print fewer decimal digits, so the
@@ -749,6 +1065,11 @@ digits, specify it this way:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The mean value for abv is </span><span class="si">{:.4f}</span><span class="s1"> and for ibu </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">abv_mean</span><span class="p">,</span> <span class="n">ibu_mean</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The mean value for abv is 0.0598 and for ibu 42.7132
 </pre></div>
 </div>
 </div>
@@ -780,13 +1101,9 @@ negative, you’ll just get zero! It doesn’t work.</p>
 suggest using absolute values. But this is just mathematically
 inconvenient. Another way to get rid of negative values is to take the
 squares. And that’s how you get to the expression for the <em>variance</em>: it is the average of the squares of the deviations from the mean. For a set of <span class="math notranslate nohighlight">\(N\)</span> values,</p>
-<p>\begin{equation*}
-\text{var} = \frac{1}{N}\sum_{i} (x_i - \bar{x})^2
-\end{equation*}</p>
+<p><span class="math notranslate nohighlight">\(\text{var} = \frac{1}{N}\sum_{i} (x_i - \bar{x})^2\)</span></p>
 <p>The variance itself is hard to interpret. The problem with it is that the units are strange (they are the square of the original units). The <strong>standard deviation</strong>, the square root of the variance, is more meaningful because it has the same units as the original variable. Often, the symbol <span class="math notranslate nohighlight">\(\sigma\)</span> is used for it:</p>
-<p>\begin{equation*}
-\sigma = \sqrt{\text{var}} = \sqrt{\frac{1}{N}\sum_{i} (x_i - \bar{x})^2}
-\end{equation*}</p>
+<p><span class="math notranslate nohighlight">\(\sigma = \sqrt{\text{var}} = \sqrt{\frac{1}{N}\sum_{i} (x_i - \bar{x})^2}\)</span></p>
 </div>
 <div class="section" id="sample-vs-population">
 <h3>Sample vs. population<a class="headerlink" href="#sample-vs-population" title="Permalink to this headline">¶</a></h3>
@@ -796,9 +1113,7 @@ population, the formulas have to be adjusted: instead of dividing by <span class
 you divide by <span class="math notranslate nohighlight">\(N-1\)</span>. This is important, especially when you work with
 real data since usually you have samples of populations.</p>
 <p>The <strong>standard deviation</strong> of a sample is denoted by <span class="math notranslate nohighlight">\(s\)</span>, and the formula is:</p>
-<p>\begin{equation*}<br />
-s = \sqrt{\frac{1}{N-1}\sum_{i} (x_i - \bar{x})^2}
-\end{equation*}</p>
+<p><span class="math notranslate nohighlight">\(s = \sqrt{\frac{1}{N-1}\sum_{i} (x_i - \bar{x})^2}\)</span></p>
 <p>Why? This gets a little technical, but the reason is that if you have a
 <em>sample</em> of the population, you don’t know the <em>real</em> value of the mean,
 and <span class="math notranslate nohighlight">\(\bar{x}\)</span> is actually an <em>estimate</em> of the mean. That’s why you’ll
@@ -920,6 +1235,11 @@ decimal digits, you can display your descriptive statistics in a pleasant, human
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The standard deviation for abv is 0.0135 and for ibu 25.9541
+</pre></div>
+</div>
+</div>
 </div>
 <p>These numbers tell us that the <code class="docutils literal notranslate"><span class="pre">abv</span></code> values are quite concentrated
 around the mean value, while the <code class="docutils literal notranslate"><span class="pre">ibu</span></code> values are quite spread out from
@@ -959,6 +1279,15 @@ You’ll show you here an example using the <code class="docutils literal notran
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pyplot</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">abv</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(array([  1.,   0.,  38., 699., 857., 486., 159., 104.,   1.,   3.]),
+ array([0.001 , 0.0137, 0.0264, 0.0391, 0.0518, 0.0645, 0.0772, 0.0899,
+        0.1026, 0.1153, 0.128 ]),
+ &lt;BarContainer object of 10 artists&gt;)
+</pre></div>
+</div>
+<img alt="../_images/01_Cheers_Stats_Beers_63_1.png" src="../_images/01_Cheers_Stats_Beers_63_1.png" />
 </div>
 </div>
 <p>Now, you have a line plot, but if you see this plot without any
@@ -1015,6 +1344,9 @@ does a nice job presenting readable plots. Set the style using:</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/01_Cheers_Stats_Beers_67_0.png" src="../_images/01_Cheers_Stats_Beers_67_0.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1029,6 +1361,9 @@ does a nice job presenting readable plots. Set the style using:</p>
 <span class="n">pyplot</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/01_Cheers_Stats_Beers_68_0.png" src="../_images/01_Cheers_Stats_Beers_68_0.png" />
 </div>
 </div>
 <p>In the previous two plots set the colors in two ways:</p>
@@ -1060,6 +1395,9 @@ one of</p>
 <span class="n">pyplot</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/01_Cheers_Stats_Beers_71_0.png" src="../_images/01_Cheers_Stats_Beers_71_0.png" />
 </div>
 </div>
 <div class="section" id="comparing-with-a-normal-distribution">
@@ -1116,6 +1454,16 @@ how the following piece of code works.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ibu 1sigma
+0.6811387900355872
+ibu 2sigma
+0.9565836298932386
+ibu 3sigma
+0.9971530249110322
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1125,6 +1473,16 @@ how the following piece of code works.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="n">abv_clean</span><span class="o">&lt;</span><span class="n">abv_mean</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">abv_std</span><span class="p">,</span><span class="n">abv_clean</span><span class="o">&gt;</span><span class="n">abv_mean</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">abv_std</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">abv_clean</span><span class="p">)))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;abv 3sigma&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="n">abv_clean</span><span class="o">&lt;</span><span class="n">abv_mean</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="n">abv_std</span><span class="p">,</span><span class="n">abv_clean</span><span class="o">&gt;</span><span class="n">abv_mean</span><span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="n">abv_std</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">abv_clean</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>abv 1sigma
+0.7406303236797274
+abv 2sigma
+0.9433560477001701
+abv 3sigma
+0.9978705281090289
 </pre></div>
 </div>
 </div>
@@ -1188,6 +1546,13 @@ you need to follow a specific syntax. In your example this would be:</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The percentage of coverage at 1 std of the abv_mean is : 74.06 %
+The percentage of coverage at 2 std of the abv_mean is : 94.34 %
+The percentage of coverage at 3 std of the abv_mean is : 99.79 %
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>ibu</strong></p>
 <div class="cell docutils container">
@@ -1202,6 +1567,13 @@ you need to follow a specific syntax. In your example this would be:</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The percentage of coverage at 1 std of the ibu_mean is : </span><span class="si">{:.2f}</span><span class="s1"> %&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ibu_std1_per</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The percentage of coverage at 2 std of the ibu_mean is : </span><span class="si">{:.2f}</span><span class="s1"> %&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ibu_std2_per</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The percentage of coverage at 3 std of the ibu_mean is : </span><span class="si">{:.2f}</span><span class="s1"> %&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ibu_std3_per</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The percentage of coverage at 1 std of the ibu_mean is : 68.11 %
+The percentage of coverage at 2 std of the ibu_mean is : 95.66 %
+The percentage of coverage at 3 std of the ibu_mean is : 99.72 %
 </pre></div>
 </div>
 </div>
@@ -1248,22 +1620,24 @@ recommended three lectures:</p>
 </div>
 <div class="section" id="problems">
 <h1>Problems<a class="headerlink" href="#problems" title="Permalink to this headline">¶</a></h1>
-<ol>
+<ol class="simple">
 <li><p>Gordon Moore created an empirical prediction that the rate of
 semiconductors on a computer chip would double every two years. This
 prediction was known as Moore’s law. Gordon Moore had originally only
 expected this empirical relation to hold from 1965 - 1975
 [<a class="reference external" href="https://en.wikipedia.org/wiki/Moore%27s_law">1</a>,<a class="reference external" href="https://spectrum.ieee.org/computing/hardware/gordon-moore-the-man-whose-name-means-progress">2</a>],
 but semiconductor manufacturers were able to keep up with Moore’s law
-until 2015.</p>
+until 2015.</p></li>
+</ol>
 <p>In the folder “../data” is a comma separated value (CSV) file,
 “transistor_data.csv” <a class="reference external" href="https://en.wikipedia.org/wiki/Transistor_count#Microprocessors">taken from wikipedia
 01/2020</a>.</p>
 <p>a. Use the <code class="docutils literal notranslate"><span class="pre">!head</span> <span class="pre">../data/transistor_data.csv</span></code> command to look at
 the top of the csv. What are the headings for the columns?</p>
-<p>b. Load the csv into a pandas dataframe. How many</p>
-</li>
-</ol>
+<p>b. Load the csv into a pandas dataframe. How many missing values
+(<code class="docutils literal notranslate"><span class="pre">NaN</span></code>) are
+in the column with the number of transistors? What fraction are
+missing?</p>
 </div>
 
     <script type="text/x-thebe-config">

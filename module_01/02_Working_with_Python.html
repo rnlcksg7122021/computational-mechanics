@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -199,6 +201,92 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/03_IVP-project.html">
      Initial Value Problems - Project
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../module_04/README.html">
+   Computational Mechanics 4 - Linear Algebra
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_04/01_Linear-Algebra.html">
+     Linear Algebra Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_04/02_Gauss_elimination.html">
+     Gauss Elimination
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_04/03_Linear-regression-algebra.html">
+     Linear Regression Algebra
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/04_Linear_Algebra-project.html">
+     CompMech04-Linear Algebra Project
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../module_05/README.html">
+   Computational Mechanics 5 - Boundary Value Problems
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_05/01_Revisiting_derivatives.html">
+     Revisiting Derivatives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_05/02_Keep_it_steady.html">
+     Keep it Steady
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../module_05/03_Good_Vibrations.html">
+     Good Vibrations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/05-BVPs_project.html">
+     Computational Mechanics Boundary Values - Project 05
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/README.html">
+   Quick How-to documents
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/polyfit.html">
+     Creating a quadratic fit on random data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/extra-FEA_material.html">
+     Extra Material: Direct stiffness method for Finite Element analysis (FEA)
     </a>
    </li>
   </ul>
@@ -936,7 +1024,7 @@ you can do more computations, like add or multiply them. For example:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2855/2664324349.py:1: RuntimeWarning: invalid value encountered in true_divide
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1685/2664324349.py:1: RuntimeWarning: invalid value encountered in true_divide
   x_array / y_array
 </pre></div>
 </div>
@@ -1298,8 +1386,8 @@ with no numbers repeated.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[25, 34, 78, 14, 80, 3, 48, 85, 55, 70]
-[12, 56, 53, 68, 20, 0, 96, 95, 15, 99]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[88, 34, 26, 42, 51, 61, 73, 86, 28, 44]
+[73, 19, 21, 94, 13, 89, 61, 69, 91, 56]
 </pre></div>
 </div>
 </div>
@@ -1319,8 +1407,8 @@ takes to execute all the code in that cell.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 27 µs, sys: 5 µs, total: 32 µs
-Wall time: 35.8 µs
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 22 µs, sys: 4 µs, total: 26 µs
+Wall time: 28.4 µs
 </pre></div>
 </div>
 </div>
@@ -1332,7 +1420,7 @@ Wall time: 35.8 µs
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[37, 90, 131, 82, 100, 3, 144, 180, 70, 169]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[161, 53, 47, 136, 64, 150, 134, 155, 119, 100]
 </pre></div>
 </div>
 </div>
@@ -1366,8 +1454,8 @@ that the arrays and the lists are of the same length and type
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[46 61 35 33 83 68 77 80 76 36]
-[ 8  4 40 66 47 25  3 34 43 17]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[40 89 13 52 65 18 29 18 62 22]
+[77 12 61  8 11  4 28 27 14 88]
 </pre></div>
 </div>
 </div>
@@ -1381,8 +1469,8 @@ that the arrays and the lists are of the same length and type
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 12 µs, sys: 2 µs, total: 14 µs
-Wall time: 17.2 µs
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 11 µs, sys: 2 µs, total: 13 µs
+Wall time: 16.5 µs
 </pre></div>
 </div>
 </div>
@@ -1466,7 +1554,7 @@ in the x-axis, you need to import the module <code class="docutils literal notra
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fbba21de7c0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f2d4fc391c0&gt;
 </pre></div>
 </div>
 <img alt="../_images/02_Working_with_Python_104_1.png" src="../_images/02_Working_with_Python_104_1.png" />
